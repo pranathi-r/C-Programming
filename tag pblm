@@ -1,0 +1,4 @@
+docker images
+docker login
+docker tag siya pranathir14/siya
+docker push pranathir14/siya
