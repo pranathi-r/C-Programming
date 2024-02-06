@@ -1,0 +1,9 @@
+docker run mysql
+docker pull mysql
+docker run -e MYSQL_ROOT_PASSWORD="root" -d mysql
+
+docker container ls
+docker inspect <NAMES>
+
+  docker run -it mysql /bin/bash
+mysql -h 172.17.0.2 -u root -p
