@@ -1,0 +1,19 @@
+package sell;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class pg9 {
+	
+	public static void main(String args[]) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\prana\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+		ChromeDriver d=new ChromeDriver();
+		d.manage().window().maximize();
+		d.get("https://vvce.ac.in/");
+		d.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		d.findElement(By.xpath("//*[@id=\"wpcf7-f1068-p8957-o1\"]/form/div[2]/div[1]/span/input"));
+	}
+
+}
