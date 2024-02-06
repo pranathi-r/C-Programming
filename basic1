@@ -1,0 +1,33 @@
+TO CHECK EMAIL AND USER_NAME
+git config --list
+
+TO ADD EMAIL AND USER_NAME
+git config --global user.email "EMAIL"
+git config --global user.name "USERNAME"
+
+IF THERE ARE ANY OTHER EMAIL AND USER_NAME AND TO REMOVE THOSE AND THEN ADD YOUR CREDENTIALS
+git config --global --unset user.email
+git config --global --unset user.name
+
+CREATE A FLODER,INSIDE THE FOLDER ADD A TEXTFILE WITH SOME TEXTS IN IT
+RIGHT CLICK--> more options --> git bash here
+ 
+git init
+git remote add origin "REPO_URL"
+git add .
+git commit -m "FIRST_COMMIT"
+git push origin master 
+
+CHANGE THE TEXT WITHIN THE FILE AND SAVE IT
+
+git satus
+git add .
+git commit -m "SECOND_COMMIT"
+git push origin master
+
+git status
+git log -->COPY THE ID OF THE FIRST COMMIT--> "eg: commit 826d458d254854cs" (ONLY THE ID)
+git reset --hard <COMMIT ID> --> "eg: git reset --hard 826d458d254854cs"
+
+OPEN A NEW FOLDER
+git clone <REPO HTTPS LINK>
