@@ -1,0 +1,28 @@
+package lab7.lab7;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class sample{
+	
+	public static void main(String args[]) throws FileNotFoundException, IOException, ParseException {
+		JSONObject job=(JSONObject) new JSONParser().parse(new FileReader("./json/student.json"));
+		
+		String fname=(String) job.get("firstname");
+		String lname=(String) job.get("lastname");
+		
+		System.out.println(fname);
+	}
+	
+}
+
+{
+ "firstname" :"Pranathi",
+ "lastname" : "R"
+ 
+}
